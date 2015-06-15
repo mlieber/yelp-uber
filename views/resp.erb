@@ -1,0 +1,28 @@
+
+<head>
+<style>
+body {background-color:darkgray}
+normal {color:green}
+h1   {color:lightgray}
+h2   {color:white}
+h3    {color:green}
+</style>
+
+<h2>Uber to Yelp app </h2>
+<h3>Results :
+<br>
+
+
+<%= widgetUber['products'].first['display_name'].to_s %> :  <img src=   <%= widgetUber['products'].first['image'].to_s %>  >
+   capacity  <%= widgetUber['products'].first['capacity'].to_s %> 
+<br> 
+cost per minute  <%= widgetUber['products'].first['price_details']['cost_per_minute'].to_s %> 
+<br>
+Yelp found this restaurant: 
+<%=  name =  response.businesses[0].name %> located at :
+<%=  response.businesses[0].location.address %> <%=  response.businesses[0].location.city %>
+<br>
+Let's go there from where you are located,   <%= content3 %> !
+<br>
+
+</h3>

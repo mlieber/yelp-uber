@@ -1,0 +1,30 @@
+
+
+<head>
+<style>
+body {background-color:black}
+h1   {color:lightgray}
+h2   {color:white}
+p    {color:green}
+</style>
+
+<!--   client = OAuth2::Client.new('45K8ixUAozXT-O5zGp2AOTVgHb7ZZkgD', '1nJ7v4OTF_mCX2Wl3AcajtDUNdjClfIR9c-CRD0J', 
+      :site => 'https://login.uber.com/oauth/authorize') %>
+<%   token = client.auth_code.get_token('authorization_code_value', 
+     :redirect_uri => 'http://localhost:4567/callback', 
+     :headers => {'Authorization' => "Token oylZjSywhatFk8VNG-7JndnniuD97aqBpErSBe_L"}) % -->
+
+
+<h2>Uber to Yelp app </h2>
+
+</head><h1> Please choose where you're coming from, and the kind of food you'd like to eat and what location: </h1>
+<img src="http://s3-media2.fl.yelpcdn.com/assets/srv0/www_pages/e98ed5a1460f/assets/img/brand_guidelines/yelp-2c-outline.png" height="142" width="142">
+
+<form action="/new" class="form-inline" method="POST">
+  <input type="text" placeholder="123 main st San francisco 94110" name="content3">
+  <input type="text" placeholder="e.g. restaurant " name="content">
+  <input type="text" placeholder="e.g. san francisco" name="content2">
+  
+  <button type="submit" class="btn">Post</button>
+</form>
+
