@@ -16,9 +16,9 @@ Need to install:
 - HTTParty
 - Google API Client
 - CGI
-- oauth2 package
+- OAuth2 package
 - 
 Then launch via 'ruby app.rb' .
-
+Currently, the redirect to Uber via Oauth doesnt work :-(
 
 
